@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CompassUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UltrasonicSensorUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
