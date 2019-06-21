@@ -8,5 +8,10 @@ namespace LineBot.Interfaces
 {
     interface ICompass
     {
+        double GetHeading();
+
+        double GetPitch();
+
+        double GetRoll();
     }
 }

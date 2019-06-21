@@ -54,7 +54,7 @@
     <Compile Include="Interfaces\ICompass.cs" />
     <Compile Include="Misc\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimulatedHardware\Compasses\OS4000\OS4000.cs" />
+    <Compile Include="SimulatedHardware\Compasses\OS4000\SimulatedOS4000.cs" />
     <Compile Include="TestingFakes\FakeCompass.cs" />
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

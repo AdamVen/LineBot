@@ -11,5 +11,19 @@ namespace LineBot.Devices.Compasses.OS4000
 
     public class OS4000 : ICompass
     {
+        public double GetHeading()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetPitch()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double GetRoll()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
