@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommunicationHelpers\I2COverSerialCommunicator.cs" />
+    <Compile Include="CustomControls\DeviceCommunicationSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\DeviceCommunicationSettings.Designer.cs">
+      <DependentUpon>DeviceCommunicationSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices\Compasses\OS4000\OS4000.cs" />
     <Compile Include="Devices\UltrasonicSensors\SRF02\SRF02.cs" />
     <Compile Include="Forms\FormMain.cs">
@@ -60,6 +67,9 @@
     <Compile Include="SimulatedHardware\UltrasonicSensors\SRF02\SRF02.cs" />
     <Compile Include="TestingFakes\FakeCompass.cs" />
     <Compile Include="TestingFakes\FakeUltrasonicSensor.cs" />
+    <EmbeddedResource Include="CustomControls\DeviceCommunicationSettings.resx">
+      <DependentUpon>DeviceCommunicationSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,8 +95,6 @@
   <ItemGroup>
     <None Include="Misc\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
